@@ -12,13 +12,12 @@ Aplicação interativa em Python para gerenciamento de tarefas (*Task Tracker*),
 - [Pré-requisitos](#-pré-requisitos)
 - [Como Executar](#-como-executar)
 - [Tecnologias e Conceitos Utilizados](#-tecnologias-e-conceitos-utilizados)
-- [Próximos Passos (Roadmap)](#-próximos-passos-roadmap)
 
 ---
 
 ## 📖 Sobre o Projeto
 
-O **Task Tracker** é uma ferramenta desenvolvida com foco em conceitos fundamentais e intermediários de Python puro (sem bibliotecas externas). O sistema organiza a criação, validação e persistência de tarefas em um fluxo contínuo através de um menu interativo no terminal.
+O **Task Tracker** é uma ferramenta desenvolvida com foco em conceitos fundamentais e intermediários de Python puro (sem bibliotecas externas). O sistema organiza a criação, validação e persistência de tarefas em um fluxo contínuo por um menu interativo no terminal.
 
 ---
 
