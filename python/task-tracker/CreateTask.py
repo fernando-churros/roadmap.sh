@@ -1,14 +1,23 @@
-from datetime import datetime
+import datetime
 from typing import Any
-from dados import all_tasks
+from dados import create_date
+from datetime import datetime
 
 class CreateTask:
-    def __init__(self, name: str, desc: str) -> None:
-        self.__id_task = self.create_id()
+    def __init__(self, name: str, desc: str, id_task:int = 0, c_date = None, u_date = None, status = None) -> None:
+        self.id = id_task
         self.name = name
         self.desc = desc
-        self.__create_date = self.create_date()
-        self.status = 'todo'
+        self.create_date = c_date
+        self.update_date =  u_date
+        self.status = status
+
+    @property
+    def id(self):
+        return self.__id_task
+    @id.setter
+    def id(self, value):
+        self.__id_task = value
 
     @property
     def name(self):
@@ -34,29 +43,38 @@ class CreateTask:
 
         self._desc = desc
 
-    @staticmethod
-    def create_id() -> int:
-        tasks = all_tasks()
-        if len(tasks) != 0:
-            id_task = max(task['id'] for task in tasks) + 1
-        else:
-            id_task = 1
+    @property
+    def create_date(self):
+        return self.__create_date
+    @create_date.setter
+    def create_date(self, value):
+        self.__create_date = create_date() if value is None else value
 
-        return id_task
+    @property
+    def update_date(self):
+        return self.__update_date
+    @update_date.setter
+    def update_date(self, value):
+        self.__update_date = create_date() if value is None else value
 
-    @staticmethod
-    def create_date():
-        x: datetime = datetime.now()
-        create_date = x.strftime('%d/%m/%y ás %H:%M')
+    @property
+    def status(self):
+        return self._status
+    @status.setter
+    def status(self, value):
+        self._status = 'todo' if value is None else value
 
-        return create_date
+    def update_status(self, value):
+        self.__update_date = create_date()
+        self.status = value
 
     def to_dict(self) -> dict:
         to_dict = {
-            'id': self.__id_task,
+            'id': self.id,
             'nome': self.name,
             'descrição': self.desc,
-            'data de criação': self.__create_date,
+            'data de criação': self.create_date,
+            'ultima modificação': self.update_date,
             'status': self.status
         }
 
