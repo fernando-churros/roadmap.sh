@@ -1,15 +1,8 @@
-import json
+from datetime import datetime
 
-file_json = 'dados.json'
+def create_date():
+    x: datetime = datetime.now()
+    date = x.strftime('%d/%m/%y ás %H:%M')
 
-def all_tasks() -> list:
-    try:
-        with open(file_json, "r", encoding="utf-8") as f:
-            x = json.load(f)
+    return date
 
-    except FileNotFoundError:
-        with open(file_json, "w", encoding="utf-8") as f:
-            json.dump([], f, indent=2, ensure_ascii=False)
-        x = []
-
-    return x
