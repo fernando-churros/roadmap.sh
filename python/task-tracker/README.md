@@ -28,9 +28,9 @@ O **Task Tracker** é uma ferramenta desenvolvida com foco em conceitos fundamen
 - [x] **Registro de Data/Hora**: Marcação automática da data e hora de criação da tarefa.
 - [x] **Validação de Entrada**: Higienização contra textos vazios e remoção de espaços duplicados.
 - [x] **Persistência em JSON**: Criação automática do arquivo `dados.json` caso não exista.
-- [x] **Menu Interativo**: Navegação com tratamento defensivo contra opções inválidas.
-- [ ] **Atualizar Tarefas** *(em desenvolvimento)*
-- [ ] **Remover Tarefas** *(em desenvolvimento)*
+- [ ] **Menu Interativo**: Navegação com tratamento defensivo contra opções inválidas.
+- [x] **Atualizar Tarefas** *(em desenvolvimento)*
+- [x] **Remover Tarefas** *(em desenvolvimento)*
 - [ ] **Listar Tarefas / Filtrar por Status** *(em desenvolvimento)*
 
 ---
