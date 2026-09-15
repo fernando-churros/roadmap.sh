@@ -1,6 +1,6 @@
 # Task Tracker CLI (Python)
 
-Aplicação interativa em Python para gerenciamento de tarefas (*Task Tracker*), permitindo cadastrar e persistir tarefas em arquivo JSON local, desenvolvida como solução para o desafio do [roadmap.sh](https://roadmap.sh/projects/task-tracker).
+Aplicação interativa em Python para gerenciamento de tarefas (*Task Tracker*), permitindo cadastrar e persistir tarefas em arquivo JSON local, desenvolvida como solução para o desafio do [task-tracker](https://roadmap.sh/projects/task-tracker/solutions?u=6aa73d84c2d718138d77c38d).
 
 ---
 
