@@ -1,6 +1,6 @@
 .main {
     height: calc(100vh - 2rem);
-    margin: 1rem 2rem;
+    margin: 1rem 0;
 }
 
 .grid_container {
@@ -14,9 +14,8 @@
     border: 2px solid #000;
 }
 
-.main .title {
+.title {
     margin: 1rem 0 1rem 1rem;
-    font-size: 1.5rem;
 }
 
 .main_projects_list > li {
@@ -76,4 +75,38 @@
 
 .main_education_list > li {
     margin-bottom: 0.5rem;
+}
+
+/* footer */
+
+.footer {
+    margin: 0 2rem;
+}
+
+.footer > .title {
+    margin-top: 3rem;
+}
+
+.footer_review_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+    margin: 0 2rem 10rem;
+}
+
+.footer_review_list > li {
+    padding: 2rem;
+    border: 1px solid #000;
+    border-radius: 2rem;
+    color: #4e4e4e;
+}
+
+.footer_review_list > li > p {
+    margin-bottom: 0.5rem;
+    color: #000;
+}
+
+.footer > h3 {
+    text-align: center;
+    margin-bottom: 2rem;
 }
