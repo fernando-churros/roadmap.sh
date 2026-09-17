@@ -53,3 +53,27 @@
 .main_experience_list a {
     color: rgb(38, 38, 168);
 }
+
+/* Education */
+
+.main_education {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.main_education-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin: 0 1rem;
+}
+
+.main_education_list {
+    list-style-position: inside;
+    list-style-type: "- ";
+}
+
+.main_education_list > li {
+    margin-bottom: 0.5rem;
+}
