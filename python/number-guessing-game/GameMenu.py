@@ -5,7 +5,6 @@ class GameMenu:
         self.separator = '-'
         self.line = len(self.phrase)
         self.difficulty = {
-            '0': ('Unknown Difficulty', 0),
             '1': ('Easy', 7),
             '2': ('Medium', 4),
             '3': ('Hard', 2),
@@ -30,9 +29,9 @@ class GameMenu:
 
             if int(difficulty) == 0:
                 print('Saindo do Jogo...')
-                return self.difficulty[difficulty][0], self.difficulty[difficulty][1]
+                return 'Unknown Difficulty', 0
 
-            if not ( 0 < int(difficulty) <= 4 ): raise ValueError()
+            if not ( 1 <= int(difficulty) <= 3 ): raise ValueError()
 
             print('Iniciando o jogo\n'.center(30))
             return self.difficulty[difficulty][0], self.difficulty[difficulty][1]
