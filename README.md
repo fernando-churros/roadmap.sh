@@ -7,5 +7,5 @@ Este repositório contém projetos baseados do site [roadmap.sh](https://roadmap
 
 # Projetos Python | Roadmap.sh 
 
-[Task Tracker](https://roadmap.sh/projects/task-tracker)
+| [Task Tracker](https://roadmap.sh/projects/task-tracker) | [Number Guessing Game](https://roadmap.sh/projects/number-guessing-game) |
 
